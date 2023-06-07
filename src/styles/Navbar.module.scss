@@ -1,0 +1,15 @@
+.nav {
+    padding: 0 52px 0 128px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    .link {
+        color: #fff;
+        a {
+            display: inline-block;
+            margin: 68px;
+            // margin-right: 68px;
+        }
+    }
+}
