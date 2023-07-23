@@ -1,0 +1,47 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 64px;
+
+    .contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        // height: 146px;
+        color: white;
+        .contacts {
+            padding-right: 64px;
+            text-align: center;
+            .contactsText {
+                padding-top: 15px;
+                width: 150px;
+            }
+        }
+        .contactsWrappers {
+            // width: 250px;
+
+            .contactwrapTitle {
+                color: #ff8303;
+                font-family: Inconsolata;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                padding-bottom: 16px;
+                text-align: center;
+            }
+            .contactWrapLink {
+                display: flex;
+                align-items: flex-start;
+                gap: 48px;
+                .wrapLink {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 8px;
+                }
+            }
+        }
+    }
+}

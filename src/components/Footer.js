@@ -1,9 +1,11 @@
-import Heading from "./Heading"
+import Contact from "./Contact"
+import style from '@/styles/Footer.module.scss'
 
 
 const Footer = () => (
-    <footer>
-        <Heading tag="h3" text="footer" />
+    <footer className={style.footer}
+        id="Contacts">
+        <Contact />
     </footer>
 )
 
