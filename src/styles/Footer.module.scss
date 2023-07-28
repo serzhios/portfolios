@@ -40,6 +40,9 @@
                     justify-content: center;
                     align-items: center;
                     gap: 8px;
+                    &:hover {
+                        color: #ff8303;
+                    }
                 }
             }
         }

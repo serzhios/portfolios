@@ -62,7 +62,10 @@ const Contact = () => {
     // if (!contacts) {
     //     return null
     // }
-
+    const openInNewTab = (url) => {
+        const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+        if (newWindow) newWindow.opener = null
+    }
     return (
         <section className={style.contact}>
             <div className={style.contacts}>
@@ -87,7 +90,13 @@ const Contact = () => {
 
                         //     </div>
                         // </div>
-                        <Link id={id} href={nameUrl} className={style.wrapLink}>
+
+                        <Link id={id}
+                            // onClick={() => openInNewTab(nameUrl)}
+                            href={nameUrl}
+                            target="_blank"
+                            rel="noopener"
+                            className={style.wrapLink} >
                             <Image src={imageUrl} width={26} height={26} />
                             {name}
                         </Link>

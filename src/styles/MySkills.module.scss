@@ -33,22 +33,28 @@
         flex-wrap: wrap;
         // padding-left: 189px;
         padding-top: 35px;
+
         .skillsWrappersModule {
             margin: 0px 7px 0 7px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            filter: blur(2px);
+            // filter: blur(2px);
             width: 200px;
             height: 300px;
             left: 0px;
             top: 0px;
+            // box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
 
             &:hover {
-                filter: blur(0px);
-                background: #21201d;
-                box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
+                // filter: blur(0px);
+                // background: #21201d;
+                // box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
+                // transform: scale(1.2);
+                transform: rotateZ(360deg);
+                transition: 1s;
+                // transform: rotateZ(360deg); /* Поворачиваем на 360 градусов */
             }
 
             border-radius: 10px;
@@ -58,6 +64,13 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                // .imgUrl:hover {
+                //     // filter: blur(0px);
+                //     // background: #21201d;
+                //     // box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
+                //     // transform: rotate(360deg); /* Поворачиваем на 360 градусов */
+                //     // transform: scale(1.2);
+                // }
             }
             .skillsTitle {
                 padding-top: 25px;

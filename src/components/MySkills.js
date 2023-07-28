@@ -21,7 +21,7 @@ const MySkills = ({ skills }) => {
                         < div key={id} className={style.skillsWrapper}>
 
 
-                            <Image src={imageUrl} width={120} height={128} />
+                            <Image className={style.imgUrl} src={imageUrl} width={120} height={128} />
                             {/* <div>
         {image}
     </div> */}
@@ -44,11 +44,3 @@ console.log(MySkills)
 
 export default MySkills
 
-// "extends": [
-//     "plugin:react/recommended",
-//     "next/core-web-vitals",
-//     "airbnb",
-
-//     "plugin:@next/next/recommended",
-//     "prettier"
-// ],Ё

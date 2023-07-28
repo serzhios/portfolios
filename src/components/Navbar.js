@@ -9,7 +9,7 @@ import Image from 'next/image'
 const navigation = [
     { id: 1, title: "About me", path: "/" },
     { id: "/#mySkills", title: "Skills", path: '/#mySkills' },
-    { id: "/#myWork", title: "Pet-projects", path: "/#myWork" },
+    { id: "/#myWorks", title: "Pet-projects", path: "/#myWorks" },
     { id: "/#Contacts", title: "Contacts", path: "/#Contacts" },
 ]
 
@@ -39,8 +39,14 @@ const Navbar = () => {
             </div>
             <div className={style.link}>
                 {navigation.map(({ id, title, path }) => (
-                    <Link id={id} href={path} className={pathname === path ? style.active : null} passHref>
-                        {title}
+                    <Link id={id}
+                        href={path}
+                        className={style.aLink}
+                        passHref
+                        legacyBehavior
+                    >
+                        <a >{title}</a>
+
                     </Link>
 
                 ))}
